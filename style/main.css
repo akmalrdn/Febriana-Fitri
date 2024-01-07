@@ -1,0 +1,257 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+.song {
+  visibility: hidden;
+}
+
+.container {
+  height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  visibility: hidden;
+  width: 100%;
+}
+
+.container > div {
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 4.5rem;
+}
+
+.two {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.three {
+  font-size: 2rem;
+}
+
+.four .text-box {
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+  width: 600px;
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  background-color: rgb(21, 161, 237);
+  border-radius: 3px;
+  bottom: -50px;
+  color: #fff;
+  padding: .5rem 1rem;
+  position: absolute;
+  right: 5px;
+}
+
+.five p {
+  font-size: 2rem;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.five .idea-3 {
+  margin: 4px;
+  font-size: 30px;
+}
+
+.idea-3 .idea-5 strong {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 4px;
+}
+
+.five .idea-11 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.idea-11 span, .idea-12 span, .wish-hbd span {
+  display: inline-block;
+}
+
+.idea-12 span {
+  font-size: 15rem;
+}
+
+.six {
+  position: relative;
+  top: 10vh;
+  z-index: 1;
+}
+
+.six img {
+  display: inline-block;
+  height: 200px;
+  max-width: 100%;
+  border-radius: 15%;
+  border: 3px solid #aaa;
+  /* height: auto; */
+}
+
+
+.baloons img {
+  display: inline-block;
+  position: absolute;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+.seven {
+  justify-content: center;
+  align-items: center;
+}
+
+.wish-hbd {
+  font-size: 3em;
+  font-weight: 600;
+}
+
+.wish h5 {
+  font-size: 17px;
+  font-weight: lighter;
+  margin: 15px;
+  padding: 6px;
+  padding: 20px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  box-shadow: 0 35px 68px 0 rgba(136, 174, 222, 0.42),
+    inset 0 -8px 16px 0 #b9d1f1;
+  position: relative;
+  backdrop-filter: blur(15px);
+  z-index: 10;
+}
+
+.info {
+  font-size: 10px;
+  margin-top: 10px;
+}
+
+.tmbl {
+  padding: 6px 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 20px;
+  font-weight: 700;
+  transition: transform 0.1s;
+  margin: 20px;
+}
+
+.tmbl.mau {
+  background-color: #2B30CD;
+  color: whitesmoke;
+}
+
+.tmbl.gak {
+  background-color: #ff2833;
+  color: white;
+}
+
+.tmbl:active {
+  transform: translateY(5px);
+  }
+  .tmbl:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+  0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+  /* Media Queries */
+  @media screen and (max-height: 1000px) {
+  .six {
+    left: 40%;
+  }
+}
+
+  @media screen and (max-height: 800px) {
+  .six {
+    left: 37%;
+  }
+}
+
+  @media screen and (max-height: 700px) {
+  .six {
+    left: 32%;
+  }
+}
+
+  @media screen and (max-height: 850px) and (max-width: 450px) {
+  .six {
+    left: 32%;
+  }
+}
+
+  @media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .four .text-box {
+    width: 85%;
+  }
+
+  .text-box .fake-btn {
+    bottom: -38px;
+    right: 5px;
+  }
+
+  .idea-11 span {
+    display: block;
+   }
+
+   .idea-12 span {
+      font-size: 10rem;
+    }
+
+    .six {
+      top: 0;
+      width: 100%;
+    }
+
+    .wish-hbd {
+      font-size: 1.5em;
+    }
+
+    .wish h5 {
+      font-size: 18px;
+    }
+
+  }
