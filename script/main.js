@@ -1,6 +1,6 @@
 window.addEventListener('load', () => {
     Swal.fire({
-        title: 'backsound akan di ganti, apa tetap akan diputar?',
+        title: 'backsound apa akan tetap akan diputar?',
         // text: "You won't be able to revert this!",
         icon: 'warning',
         showCancelButton: true,
